@@ -1,0 +1,11 @@
+{
+    "menu_name": "Anaconda${PY_VER} ${PLATFORM}",
+    "menu_items":
+    [
+        {
+            "name": "neurotic",
+            "pyscript": "${PYTHON_SCRIPTS}/neurotic-script.py",
+            "icon": "${MENU_DIR}/neurotic-logo.ico"
+        }
+    ]
+}
