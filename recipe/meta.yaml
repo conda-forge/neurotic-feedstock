@@ -13,11 +13,12 @@ build:
   number: 1
   entry_points:
     - neurotic=neurotic.scripts:main
+  skip: True  # [py<36 or py>=38]
 
 requirements:
   host:
     - pip
-    - python >=3.6,<3.8  # <3.8 required for pyqtgraph 0.10.0
+    - python
   run:
     - av
     - ephyviewer >=1.2.0
