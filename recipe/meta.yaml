@@ -10,16 +10,15 @@ source:
   sha256: 1dceebe21845828b6783721a82bfd61cd2f87fcca6e373db7ec1555e51ce138e
 
 build:
-  noarch: python
-  number: 0
+  number: 1
   entry_points:
     - neurotic=neurotic.scripts:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: True  # [py<36 or py>=38]
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
     - av
     - ephyviewer >=1.2.0
