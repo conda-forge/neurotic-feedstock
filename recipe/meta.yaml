@@ -10,10 +10,10 @@ source:
   sha256: 1dceebe21845828b6783721a82bfd61cd2f87fcca6e373db7ec1555e51ce138e
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - neurotic=neurotic.scripts:main
-  skip: True  # [py<36 or py>=38]
+  skip: True  # [py<36]
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - packaging
     - pandas
     - pyqt
-    - python >=3.6,<3.8  # <3.8 required for pyqtgraph 0.10.0
+    - python >=3.6
     - python-neo >=0.7.2
     - pyyaml
     - quantities
