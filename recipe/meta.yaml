@@ -1,5 +1,5 @@
 {% set name = "neurotic" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 020e877b16ebe8adc04120bf02723d0108e7c3c6afa5728bf3381d28ce1228c1
+  sha256: 7d6b85992335daa4fb3ff82b4958fdc38a7af5d152a195499a8d524e1cdec2a7
 
 build:
   number: 0
@@ -21,11 +21,12 @@ requirements:
     - python
   run:
     - av
-    - ephyviewer >=1.2.0
+    - ephyviewer >=1.2.1
     - numpy
     - packaging
     - pandas
-    - pyqt
+    - pyqt          # [not win]
+    - pyqt !=5.9.2  # [win]
     - python
     - python-neo >=0.7.2
     - pyyaml
