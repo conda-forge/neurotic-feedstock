@@ -1,5 +1,5 @@
 {% set name = "neurotic" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 84c05f25009574a8b3b9e8ada66097758993be025c791d448e5e92a4e953de69
+  sha256: 5b65ca5003f42948594de44ba4d7eb3afab875614f1709c88df7ca59b1957e2e
 
 build:
   number: 0
   entry_points:
     - neurotic=neurotic.scripts:main
-  skip: True  # [py<36]
+  skip: true  # [py<36]
 
 requirements:
   host:
