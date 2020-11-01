@@ -10,7 +10,7 @@ source:
   sha256: 5b65ca5003f42948594de44ba4d7eb3afab875614f1709c88df7ca59b1957e2e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - neurotic=neurotic.scripts:main
   skip: True  # [py<36]
