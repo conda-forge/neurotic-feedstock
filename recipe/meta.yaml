@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 846b02aac14e6528262f92425df1228c582c037e3274fff01de96b4daf8cef97
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - neurotic=neurotic.scripts:main
   skip: True  # [py<36]
